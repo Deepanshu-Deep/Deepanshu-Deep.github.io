@@ -1,16 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
+const date = document.getElementById('date');
 
-	const date = document.getElementById('date');
+const setCurrentYear = () => {
+  const currentYear = new Date().getFullYear();
   
-	const setCurrentYear = () => {
-	  const currentYear = new Date().getFullYear();
-  
-	  if (date) {
-		date.textContent = currentYear;
-	  } else {
-		console.error('Element with ID "date" not found.');
-	  }
-	};
+  if (date) {
+    date.textContent = currentYear;
+  } else {
+    console.error('Element with ID "date" not found.');
+  }
+};
 
 // hamburger menu
 const hamburger = document.querySelector('.hamburger');
@@ -30,5 +28,4 @@ hamburger.addEventListener('click', toggleMobileMenu);
 
 // initialize aos (library for scroll animation)
 AOS.init();
-  setCurrentYear();
-});
+setCurrentYear();
