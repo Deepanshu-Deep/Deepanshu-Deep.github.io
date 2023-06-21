@@ -48,13 +48,17 @@
 
 		<header class="main-header">
 			<nav class="nav slide-in-top">
+			<!-- <nav id="nav-menu">	 -->
 				<div class="container">
 					<a href="#">
 						<img src="./assets/DeepanshuPicture.jpg" alt="williams" class="logo" />
 						<title>Logo</title>
 					</a>
 
-					<ul class="nav-list">
+					<ul id="nav-menu">
+						<li>
+							<a href="#home" class="nav-links hover-effect">Home</a>
+						</li>
 						<li>
 							<a href="#about" class="nav-links hover-effect">About</a>
 						</li>
@@ -67,8 +71,8 @@
 						<li>
 							<a href="#contact" class="nav-links hover-effect">Contact</a>
 						</li>
-						<li>
-							<a href="https://drive.google.com/file/d/1XsTiQcPI2i9BQhc4rzQULiccFCRXNWDo/view?usp=share_link" class="nav-links hover-effect">Resume</a>
+						<!-- <li>https://drive.google.com/file/d/1XsTiQcPI2i9BQhc4rzQULiccFCRXNWDo/view?usp=share_link -->
+							<a href="./assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" download>Resume</a>
 						</li>
 
 					</ul>
@@ -76,7 +80,7 @@
 					<ul class="social-nav">
 						
 						<li>
-							<a
+							<a id="contact-linkedin"
 								href="https://www.linkedin.com/in/deepanshu-deep-8969a0242/"
 								rel="noreferrer"
 								target="_blank"
@@ -94,7 +98,7 @@
 							></a>
 						</li>
 						<li>
-							<a
+							<a id="contact-github"
 								href="https://github.com/Deepanshu-Deep"
 								rel="noreferrer"
 								target="_blank"
@@ -133,12 +137,13 @@
 							<h1 class="name">Deepanshu Deep</h1>
 						</div>
 						<div>
-							<p class="intro">
+							
+							<p id="user-detail-intro">
 								A passionate Java Backend Developer living in Bangalore, Karnataka.
-								 I have the tenacity and smart-working mentality to pick up new technologies quickly & effectively.
+								I have the tenacity and smart-working mentality to pick up new technologies quickly & effectively.
 							</p>
 
-							<a href="https://drive.google.com/file/d/1XsTiQcPI2i9BQhc4rzQULiccFCRXNWDo/view?usp=sharing" target=”_blank” class="btn hire-btn"
+							<a href="./assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" download>Resume</a>
 								>Resume</a
 							>
 						</div>
@@ -152,9 +157,9 @@
 			</section>
 
 			<!-- about section -->
-			<section class="about-me" id="about">
+			<section class="about section" id="about">
 				<div class="container" data-aos="fade-up">
-					<img src="./assets/DeepanshuPicture.JPG" alt="Deepanshu Deep" />
+					<img class="home-img" src="./assets/DeepanshuPicture.JPG" alt="Deepanshu Deep" />
 					<article>
 						<p class="subtitle">Who is Deepanshu Deep</p>
 						<h2 class="title">A Bit About Me</h2>
@@ -184,8 +189,8 @@
 				</div>
 			</section>
 
-			<!-- skills section-->
-			<section class="my-skills" id="skills" data-aos="fade-up">
+			<!-- skills section-->.skills-card
+			<section class="skills-card" id="skills" data-aos="fade-up">
 				<div class="container">
 					<article>
 						<p class="subtitle">Skills</p>
@@ -245,7 +250,7 @@
 							 Take a look at some of the applications I've have built.Many more coming soon.
 						</p>
 					</article>
-					<section class="projects">
+					<section class="project-card">
 						<article class="project">
 							<a
 								href="https://github.com/aaka8566/AppleTv"
@@ -354,14 +359,14 @@
 						<h3 id="github-title"> My Github Data</h3>
 						<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=deepanshu-deep&show_icons=true&locale=en" alt="deepanshu-deep" /></p>
 					</br>
-						<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deepanshu-deep&" alt="deepanshu-deep"  /></p>
+						<p><img align="center" id="github-stats-card" src="https://github-readme-streak-stats.herokuapp.com/?user=deepanshu-deep&" alt="deepanshu-deep"  /></p>
 						
 					</br>
 					</br>
 						
 					</center>	
 					
-					<div class="calendar">
+					<div class="react-activity-calendar">
 						<!-- Loading stuff -->
 						Loading the data just for you.
 					</div>
@@ -379,9 +384,9 @@
 					<div>
 						<!-- <a href="mailto:vickyroxx741@gmail.com" target="_blank" class="mail-link hover-effect"
 							>Get in touch →</a> -->
-						<large class="mail-link hover-effect" id="con"> vickyroxx741@gmail.com</large>
-						<large class="mail-link hover-effect" id="con"><a href="https://www.linkedin.com/in/deepanshu-deep-8969a0242/">LINKED IN</a></large>
-						<large class="mail-link hover-effect" id="con">8792677494</large>
+						<large class="mail-link hover-effect" id="contact-email" class="con"> vickyroxx741@gmail.com</large>
+						<large class="mail-link hover-effect" class="con"><a href="https://www.linkedin.com/in/deepanshu-deep-8969a0242/">LINKED IN</a></large>
+						<large class="mail-link hover-effect" id="contact-phone" class="con">8792677494</large>
 					</div>
 				</div>
 			</section>

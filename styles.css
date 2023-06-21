@@ -303,7 +303,7 @@ small {
 	display: none;
 }
 
-.nav-list {
+#nav-menu {
 	display: flex;
 	align-items: center;
 	gap: 5rem;
@@ -356,7 +356,7 @@ small {
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.hero-intro {
+#user-detail-intro {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -366,7 +366,7 @@ small {
 	font-size: clamp(4rem, 5vw, 6rem);
 }
 
-.intro {
+#user-detail-intro {
 	color: var(--other-clr);
 }
 
@@ -420,13 +420,13 @@ small {
 /*******************
 		ABOUT SECTION
 *************************/
-.about-me {
+.about.section {
 	margin-block-start: var(--section-mt);
 	background: var(--secondary-clr);
 	padding: var(--section-mt) 1rem;
 }
 
-.about-me .container {
+.about.section .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	place-items: center;
@@ -434,7 +434,7 @@ small {
 	position: relative;
 }
 
-.about-me img {
+.about.section .home-img {
 	align-self: end;
 	justify-self: end;
 	width: 425px;
@@ -457,38 +457,38 @@ small {
 /*******************
 		MY SKILLS SECTION
 *************************/
-.my-skills {
+.skills-card {
 	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
 }
 
-.my-skills ul {
+.skills-card ul {
 	padding-block-start: 5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 3.2rem 1rem;
 }
 
-.my-skills li{
+.skills-card li{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-flow: column;
 	align-items: center;
 }
 
-.my-skills img{
+.skills-card img{
 	max-width: 70%;
 	/* border: 1px solid green; */
 }
 
-.my-skills li{
+.skills-card li{
 	/* box-shadow: rgba(136, 165, 191, 0.48) -4px -2px 4px -4px, rgba(170, 168, 168, 0.8) -2px -2px 8px 0px; */
 	/* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
 	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 14px 20px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 
-.my-skills li>p{
+.skills-card li>p{
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: clamp(1.8rem, 1vw, 1.35rem);
@@ -501,12 +501,12 @@ small {
 /*******************
 		PROJECTS SECTION
 *************************/
-.projects-section {
+.project-card-section {
 	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
 }
 
-.projects {
+.project-card {
 	padding-block-start: 5rem;
 	display: flex;
 	flex-direction: column;
@@ -775,12 +775,12 @@ small {
 		z-index: 1;
 	}
 
-	.nav-list,
+	#nav-menu,
 	.social-nav {
 		transition: opacity 300ms ease-in-out;
 	}
 
-	.nav-list {
+	#nav-menu {
 		flex-direction: column;
 		position: absolute;
 		top: 250px;
@@ -800,7 +800,7 @@ small {
 		transform: translateX(-50%);
 	}
 
-	.nav-list.open,
+	#nav-menu.open,
 	.social-nav.open {
 		opacity: 1;
 		pointer-events: all;
@@ -863,7 +863,7 @@ small {
 		display: none;
 	}
 
-	.my-skills ul {
+	.skills-card ul {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
@@ -900,9 +900,9 @@ small {
 }
 
 
-/* #con{
+.con{
 	margin-top: -2px;
-} */
+}
 
 
 
