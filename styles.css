@@ -344,11 +344,11 @@ small {
 /*******************
 		HERO SECTION
 *************************/
-.hero {
+.home {
 	padding: 0 1rem;
 }
 
-.hero .container {
+.home .container {
 	margin-block-start: var(--section-mt);
 	display: grid;
 	place-items: center;
@@ -370,15 +370,15 @@ small {
 	color: var(--other-clr);
 }
 
-.hero img {
+.home img {
 	max-width: 375px;
 }
 
-.hero .code {
+.home .code {
 	filter: drop-shadow(0 0 0.75rem var(--secondary-clr));
 }
 
-.hero #resume-link-2 {
+.home #resume-link-2 {
 	margin-block-start: 5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -392,7 +392,7 @@ small {
 	overflow: hidden;
 }
 
-.hero #resume-link-2::before {
+.home #resume-link-2::before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -407,13 +407,13 @@ small {
 	transition: transform 0.45s ease-in-out;
 }
 
-.hero #resume-link-2:hover {
+.home #resume-link-2:hover {
 	cursor: pointer;
 	color: hsl(0, 0%, 20%);
 	border: 0;
 }
 
-.hero #resume-link-2:hover::before {
+.home #resume-link-2:hover::before {
 	transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 
@@ -853,13 +853,13 @@ small {
 		transform: rotate(-90deg) translateX(-3px);
 	}
 
-	.hero .container {
+	.home .container {
 		height: 60vh;
 		text-align: center;
 		position: relative;
 	}
 
-	.hero img {
+	.home img {
 		display: none;
 	}
 
