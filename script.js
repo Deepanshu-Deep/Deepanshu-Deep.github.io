@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const hamburger = document.querySelector('.hamburger');
 	const navList = document.querySelector('.nav-list');
 	const socials = document.querySelector('.social-nav');
-	const navLinks = document.querySelectorAll('.nav_link');
+	const navLinks = document.querySelectorAll('.nav-links');
 
 	const toggleMobileMenu = () => {
 	hamburger.classList.toggle('open');
