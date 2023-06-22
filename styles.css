@@ -277,7 +277,7 @@ small {
 	
 }
 
-.nav .container {
+#nav-menu {
 	
 	display: flex;
 	align-items: center;
@@ -303,7 +303,7 @@ small {
 	display: none;
 }
 
-#nav-menu {
+#nav-list {
 	display: flex;
 	align-items: center;
 	gap: 5rem;
@@ -775,12 +775,12 @@ small {
 		z-index: 1;
 	}
 
-	#nav-menu,
+	#nav-list,
 	.social-nav {
 		transition: opacity 300ms ease-in-out;
 	}
 
-	#nav-menu {
+	#nav-list {
 		flex-direction: column;
 		position: absolute;
 		top: 250px;
@@ -800,7 +800,7 @@ small {
 		transform: translateX(-50%);
 	}
 
-	#nav-menu.open,
+	#nav-list.open,
 	.social-nav.open {
 		opacity: 1;
 		pointer-events: all;

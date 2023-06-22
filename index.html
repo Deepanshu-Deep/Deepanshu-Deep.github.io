@@ -48,14 +48,13 @@
 
 		<header class="main-header">
 			<nav class="nav slide-in-top">
-			<!-- <nav id="nav-menu">	 -->
-				<div class="container">
+				<div class="nav_menu" id="nav-menu">
 					<a href="#">
 						<img src="./assets/DeepanshuPicture.jpg" alt="williams" class="logo" />
 						<title>Logo</title>
 					</a>
 
-					<ul id="nav-menu">
+					<ul id="nav-list">
 						<li>
 							<a href="#home" class="nav-links hover-effect">Home</a>
 						</li>
@@ -72,7 +71,10 @@
 							<a href="#contact" class="nav-links hover-effect">Contact</a>
 						</li>
 						<!-- <li>https://drive.google.com/file/d/1XsTiQcPI2i9BQhc4rzQULiccFCRXNWDo/view?usp=share_link -->
-							<a href="./assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" download>Resume</a>
+							<a href="assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" id="resume-link-1"
+                                onclick="window.open('assets/Deepanshu-Deep-resume.pdf.pdf')" target="_blank" download>
+                                <i class="uil uil-download-alt nav_icon"></i> Resume
+                            </a>
 						</li>
 
 					</ul>
@@ -143,9 +145,12 @@
 								I have the tenacity and smart-working mentality to pick up new technologies quickly & effectively.
 							</p>
 
-							<a href="./assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" download>Resume</a>
-								>Resume</a
-							>
+							<a href="assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" id="resume-link-1"
+                                onclick="window.open('assets/Deepanshu-Deep-resume.pdf.pdf')" target="_blank" download>
+                                <i class="uil uil-download-alt nav_icon"></i> Resume
+                            </a>
+							<!-- <a href="./assets/Deepanshu-Deep-resume.pdf.pdf" class="nav-links hover-effect" download>Resume</a> -->
+							
 						</div>
 					</article>
 					<img
@@ -189,7 +194,7 @@
 				</div>
 			</section>
 
-			<!-- skills section-->.skills-card
+			<!-- skills section-->
 			<section class="skills-card" id="skills" data-aos="fade-up">
 				<div class="container">
 					<article>
