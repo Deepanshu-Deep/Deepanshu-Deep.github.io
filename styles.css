@@ -378,7 +378,7 @@ small {
 	filter: drop-shadow(0 0 0.75rem var(--secondary-clr));
 }
 
-.hire-btn {
+.hero #resume-link-2 {
 	margin-block-start: 5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -392,7 +392,7 @@ small {
 	overflow: hidden;
 }
 
-.hire-btn::before {
+.hero #resume-link-2::before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -407,13 +407,13 @@ small {
 	transition: transform 0.45s ease-in-out;
 }
 
-.hire-btn:hover {
+.hero #resume-link-2:hover {
 	cursor: pointer;
-	color: hsl(0, 0%, 9%);
+	color: hsl(0, 0%, 20%);
 	border: 0;
 }
 
-.hire-btn:hover::before {
+.hero #resume-link-2:hover::before {
 	transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 
