@@ -1,31 +1,34 @@
-const date = document.getElementById('date');
+document.addEventListener('DOMContentLoaded', () => {
 
-const setCurrentYear = () => {
-  const currentYear = new Date().getFullYear();
+	const date = document.getElementById('date');
   
-  if (date) {
-    date.textContent = currentYear;
-  } else {
-    console.error('Element with ID "date" not found.');
-  }
-};
+	const setCurrentYear = () => {
+	  const currentYear = new Date().getFullYear();
+  
+	  if (date) {
+		date.textContent = currentYear;
+	  } else {
+		console.error('Element with ID "date" not found.');
+	  }
+	};
 
-// hamburger menu
-const hamburger = document.querySelector('.hamburger');
-const navList = document.querySelector('.nav-list');
-const socials = document.querySelector('.social-nav');
-const navLinks = document.querySelectorAll('.nav-links');
+	// hamburger menu
+	const hamburger = document.querySelector('.hamburger');
+	const navList = document.querySelector('.nav-list');
+	const socials = document.querySelector('.social-nav');
+	const navLinks = document.querySelectorAll('.nav_link');
 
-const toggleMobileMenu = () => {
-  hamburger.classList.toggle('open');
-  navList.classList.toggle('open');
-  socials.classList.toggle('open');
-  document.body.classList.toggle('open');
-};
+	const toggleMobileMenu = () => {
+	hamburger.classList.toggle('open');
+	navList.classList.toggle('open');
+	socials.classList.toggle('open');
+	document.body.classList.toggle('open');
+	};
 
-navLinks.forEach((link) => link.addEventListener('click', toggleMobileMenu));
-hamburger.addEventListener('click', toggleMobileMenu);
+	navLinks.forEach((link) => link.addEventListener('click', toggleMobileMenu));
+	hamburger.addEventListener('click', toggleMobileMenu);
 
-// initialize aos (library for scroll animation)
-AOS.init();
-setCurrentYear();
+	// initialize aos (library for scroll animation)
+	AOS.init();
+	setCurrentYear();
+});

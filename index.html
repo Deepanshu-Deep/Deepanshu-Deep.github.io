@@ -368,24 +368,25 @@
 				</br>
 					<center>
 						<h3 id="github-title"> My Github Data</h3>
-						<p>&nbsp;<img align="center" id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=deepanshu-deep&show_icons=true&locale=en" alt="deepanshu-deep" /></p>
-					</br>
+						<p><img align="center" id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=deepanshu-deep&show_icons=true&locale=en" alt="deepanshu-deep" /></p>
+						</br>
+
 						<p><img align="center" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=deepanshu-deep&" alt="deepanshu-deep"  /></p>
-						
-					</br>
-					<p><img id="github-top-langs"
+						</br>
+						<p><img id="github-top-langs"
 						src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepanshu-Deep&langs_count=4&theme=city_light&hide_border=true&include_all_commits=true&count_private=true&layout=compact"
 						alt="github-top-langs"></p>
 					
-				</br>
-					</br>
+						</br>
+						
+						</br>
 						
 					</center>	
-					
-					<div class="react-activity-calendar">
+					<div class="calendar">
 						<!-- Loading stuff -->
 						Loading the data just for you.
 					</div>
+					
 
 			<!-- contact section -->
 			<section class="contact" data-aos="fade-up">
@@ -449,11 +450,11 @@
 	</body>
 </html>
 
-
 <script>
-    GitHubCalendar(".calendar", "Deepanshu-Deep");
-
-    // or enable responsive functionality
-	GitHubCalendar(".calendar", "Deepanshu-Deep", { responsive: true });
-	
+	// or enable responsive functionality
+	GitHubCalendar(".calendar", "Deepanshu-Deep", {
+		responsive: true,
+		global_stats: true,
+		tooltips: true,
+	});
 </script>
