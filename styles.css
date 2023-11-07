@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800;900&display=swap');
 
 :root {
-	--primary-clr: hsl(0, 0%, 0%);
-	--secondary-clr: hsl(0, 0%, 11%);
+	--primary-clr: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	--secondary-clr: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(206,206,224,1) 35%, rgba(0,212,255,1) 100%);
 	--other-clr: hsl(0, 0%, 61%);
 	--tag-clr: hsl(0, 0%, 55%);
 	--accent-clr: hsl(160, 100%, 70%);
